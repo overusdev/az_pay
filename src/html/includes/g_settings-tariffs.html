@@ -1,23 +1,78 @@
 <section class="g_settings-tariffs">
-    <div class="container">
-        <div class="g_settings-tariffs__header">
-            <p class="g_settings-tariffs__header-title">Укажите планируемый оборот и категорию</p>
-            <div class="g_settings-tariffs__header-form">
-                <div class="g_settings-tariffs__header-filter-turnover">
-                    <input id="introduce-turnover" class="g_settings-tariffs__header-input-turnover" type="text"
-                        placeholder="Укажите Ваш оборот" value="0">
+    <div class="g_settings-tariffs__header-wrapper">
+        <div class="container">
+            <div class="g_settings-tariffs__header">
+                <p class="g_settings-tariffs__header-title">Укажите планируемый оборот и категорию</p>
+                <div class="g_settings-tariffs__header-form">
+                    <div class="g_settings-tariffs__header-filter-turnover">
+                        <input id="introduce-turnover" class="g_settings-tariffs__header-input-turnover" type="text"
+                            placeholder="Укажите Ваш оборот" value="0">
+                    </div>
+                    <select class="g_settings-tariffs__header-select" id="select-category">
+                        <option value="product">Товар</option>
+                        <option value="service">Услуга</option>
+                        <option value="utilities">ЖКХ</option>
+                        <option value="food_delivery">Доставка еды</option>
+                        <option value="mfi">МФО</option>
+                        <option value="air">АВИА</option>
+                        <option value="game">Игры</option>
+                        <option value="charitable_foundation">Благотворительные фонд</option>
+                    </select>
                 </div>
-                <select class="g_settings-tariffs__header-select" id="select-category">
-                    <option value="product">Товар</option>
-                    <option value="service">Услуга</option>
-                    <option value="utilities">ЖКХ</option>
-                    <option value="food_delivery">Доставка еды</option>
-                    <option value="mfi">МФО</option>
-                    <option value="air">АВИА</option>
-                    <option value="game">Игры</option>
-                    <option value="charitable_foundation">Благотворительные фонд</option>
-                </select>
             </div>
         </div>
+    </div>
+    <div class="g_settings-tariffs__content-wrapper">
+        <div class="g_settings-tariffs__content-row">
+            <div class="container">
+                <div class="g_settings-tariffs__content-header">
+                    <span class="g_settings-tariffs__content-title">Платёжная система</span>
+                    <span class="g_settings-tariffs__content-tariff">Тариф</span>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="g_settings-tariffs__content-row">
+            <div class="container">
+                <div class="g_settings-tariffs__content-row">
+                    <div class="g_settings-tariffs__content-left">
+                        <div class="g_settings-tariffs__content-system">Банковские карты</div>
+                        <div class="g_settings-tariffs__content-icons">
+                            <img
+                                class="g_settings-tariffs__content-icon"
+                                src="uploads/logo-visa.png" alt="visa">
+                            <img
+                                class="g_settings-tariffs__content-icon"
+                                src="uploads/logo-mastercard.png" alt="master">
+                            <img
+                                class="g_settings-tariffs__content-icon"
+                                src="uploads/logo-mir.png" alt="mir">
+                            <img
+                                class="g_settings-tariffs__content-icon"
+                                src="uploads/logo-maestro.png" alt="maestro">
+                        </div>
+                    </div>
+                    <div class="g_settings-tariffs__content-right">
+                        <span class="g_settings-tariffs__content-total">от 2,95%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g_settings-tariffs__content-row">
+            <div class="container">
+                <div class="g_settings-tariffs__content-row">
+                    <div class="g_settings-tariffs__content-left">
+                        <div class="g_settings-tariffs__content-system">Webmoney</div>
+                        <div class="g_settings-tariffs__content-icons">
+                            <img class="g_settings-tariffs__content-icon" src="uploads/logo-webmoney.png" alt="visa">
+                        </div>
+                    </div>
+                    <div class="g_settings-tariffs__content-right">
+                        <span class="g_settings-tariffs__content-total">от 2%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- !content -->
     </div>
 </section>

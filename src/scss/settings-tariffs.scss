@@ -1,7 +1,10 @@
 .g_settings-tariffs {
-    background-color: #F9F9F9;
+    &__header-wrapper {
+        background-color: #F9F9F9;
+        padding: 45px 0;
+    }
+
     &__header {
-        padding: 45px 20px;
         @include desktop-1024 {
             padding: 45px 20px;
         }
@@ -59,6 +62,106 @@
         width: 48%;
         border-radius: 6px;
         font-size: 19px;
+    }
+
+    &__content-row {
+        height: 80px;
+        border-bottom: 1px solid #F1F1F1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        @include desktop-1024 {
+            justify-content: center;
+        }
+    }
+
+    &__content-header {
+        display: flex;
+        justify-content: space-between;
+        @include desktop-1024 {
+            padding: 0 20px;
+        }
+    }
+
+    &__content-title {
+        font-weight: bold;
+        width: 75%;
+    }
+
+    &__content-tariff {
+        width: 25%;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5)
+    }
+
+    &__content-flow {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &__content-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+
+        @include desktop-1024 {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            width: 75%;
+        }
+    }
+
+    &__content-right {
+        text-align: center;
+        justify-content: center;
+        width: 25%;
+    }
+
+    &__content-system {
+        margin-bottom: 10px;
+        font-size: 16px;
+        @include desktop-1024 {
+            font-size: 18px;
+            margin-right: 15%;
+            min-width: 225px;
+        }
+    }
+
+    &__content-icons {
+        flex-grow: 1;
+
+        &:hover .g_settings-tariffs__content-icon {
+            margin-left: 0;
+        }
+    }
+    &__content-icon {
+        transition: 0.4s;
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        // &:first-child {
+        //     transition: 0.4s;
+        //     // margin-left: -20px;
+        // }
+        margin-left: -20px;
+        width: 40px;
+
+        @include desktop-1024 {
+            width: 50px;
+        }
+    }
+    &__content-total {
+        text-align: center;
+        justify-content: center;
+        width: 25%;
     }
 
 
