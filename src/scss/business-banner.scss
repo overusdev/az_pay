@@ -1,0 +1,86 @@
+.g_business-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    color: #333;
+    // background: #fff;
+    border-radius: 8px;
+    background: linear-gradient(60deg, #f2f3f5, #d0d3d7);
+    @include tablet {
+        flex-direction: row;
+        height: 368px;
+    }
+    @include desktop-1024 {
+        height: 368px;
+        flex-direction: row;
+    }
+
+    &__left {
+        position: relative;
+        width: 100%;
+        @include tablet {
+            padding: 30px 0 20px 20px;
+        }
+        padding: 75px 0 20px 20px;
+        @include desktop-1024 {
+            width: 50%;
+            padding: 40px 0 40px 40px;
+        }
+    }
+
+    &__left-title {
+        font-size: unset;
+        padding-bottom: 20px;
+        font-weight: bold;
+        @include desktop-1024 {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__left-list {
+        margin-bottom: 80px;
+    }
+
+    &__left-list-item {
+        position: relative;
+        padding-left: 20px;
+        line-height: 26px;
+        &:before {
+            content: "\2022";
+            position: absolute;
+            top: -1px;
+            margin-left: -22px;
+            width: 8px;
+            font-family: sans-serif;
+            font-size: 35px;
+            font-weight: 400;
+            color: #ffdd2d;
+        }
+    }
+    &__left-button-action {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        padding: 15px 35px 14px;
+        min-height: 54px;
+        min-width: 48px;
+        color: #333;
+        border: 1px solid #ffdd2d;
+        background-color: #ffdd2d;
+    }
+
+    &__right {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+        @include desktop-1024 {
+            display: block;
+        }
+    }
+}
