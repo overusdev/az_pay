@@ -1,0 +1,63 @@
+.g_payments {
+
+    @include tablet {
+
+    }
+    @include desktop-1024 {
+
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 36px;
+        padding-top: 48px;
+        padding-bottom: 16px;
+    }
+
+    &__content {
+        padding: 16px 0;
+    }
+    &__content-item {
+        display: flex;
+        margin-bottom: 24px;
+        position: relative;
+    }
+    &__content-number {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        background: #e8e51b;
+        margin: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        @include desktop-1024 {
+            position: static;
+            background: #eee;
+            margin-top: 15px;
+            margin-right: 40px;
+        }
+    }
+    &__content-wrapper {
+        padding: 24px;
+        background: #eee;
+        border-radius: 8px;
+        width: 100%;
+    }
+    &__content-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    &__content-text {
+        color: #666;
+        line-height: 24px;
+    }
+
+}
